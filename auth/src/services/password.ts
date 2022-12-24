@@ -19,6 +19,3 @@ export class Password {
         return buf.toString("hex") === hashedPassword;
     }
 }
-
-Password.toHash;
-Password.compare;
