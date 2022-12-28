@@ -22,5 +22,13 @@ build:
               dockerfile: Dockerfile
           sync:
               manual:
+                  - src: "**/*.ts"
+                    dest: .
+        - image: poring86/tickets
+          context: tickets
+          docker:
+              dockerfile: Dockerfile
+          sync:
+              manual:
                   - src: "src/**/*.ts"
                     dest: .

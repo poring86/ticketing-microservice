@@ -3,3 +3,5 @@ client/node_modules
 client/.next
 common/build
 common/node_modules
+common/.git
+tickets/node_modules
