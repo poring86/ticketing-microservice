@@ -1,3 +1,5 @@
 auth/node_modules
 client/node_modules
 client/.next
+common/build
+common/node_modules
