@@ -4,11 +4,13 @@ import { app } from "../app";
 import request from "supertest";
 import jwt from "jsonwebtoken";
 
-let mongo: MongoMemoryServer;
-
 declare global {
     var signin: () => string[];
 }
+
+jest.mock("../nats-wrapper");
+
+let mongo: MongoMemoryServer;
 
 beforeAll(async () => {
     process.env.JWT_KEY = "asdf";
@@ -21,6 +23,7 @@ beforeAll(async () => {
 });
 
 beforeEach(async () => {
+    jest.clearAllMocks();
     const collections = mongoose.connection.collections;
 
     Object.values(collections).map(async (collection) => {

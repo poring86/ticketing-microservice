@@ -5,3 +5,4 @@ common/build
 common/node_modules
 common/.git
 tickets/node_modules
+nats-test/node_modules
