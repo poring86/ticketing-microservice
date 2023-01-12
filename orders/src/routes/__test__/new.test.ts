@@ -3,6 +3,7 @@ import { app } from "../../app";
 import request from "supertest";
 import { Order, OrderStatus } from "../../models/order";
 import { Ticket } from "../../models/ticket";
+import { natsWrapper } from "../../nats-wrapper";
 
 it("returns an error if the ticket does not exist", async () => {
     const ticketId = new mongoose.Types.ObjectId();
@@ -17,7 +18,9 @@ it("returns an error if the ticket does not exist", async () => {
 });
 
 it("returns an error if the ticket is already reserved", async () => {
+    const ticketId = new mongoose.Types.ObjectId().toHexString();
     const ticket = Ticket.build({
+        id: ticketId,
         title: "concert",
         price: 20,
     });
@@ -53,6 +56,8 @@ it("reserves a ticket", async () => {
         .set("Cookie", global.signin())
         .send({ ticketId: ticket.id })
         .expect(201);
+
+    expect(natsWrapper.client.publish).toHaveBeenCalled();
 });
 
 it.todo("emits an order created event");

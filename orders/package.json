@@ -18,7 +18,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@mattlino/common": "^1.0.15",
+        "@mattlino/common": "^1.0.21",
         "@types/cookie-session": "^2.0.44",
         "@types/express": "^4.17.15",
         "@types/jsonwebtoken": "^8.5.9",
