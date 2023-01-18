@@ -1,9 +1,4 @@
-import {
-    Listener,
-    OrderCreatedEvent,
-    OrderStatus,
-    Subjects,
-} from "@mattlino/common";
+import { Listener, OrderCreatedEvent, Subjects } from "@mattlino/common";
 import { queueGroupName } from "./queue-group-name";
 import { Message } from "node-nats-streaming";
 import { Order } from "../../models/order";

@@ -29,7 +29,6 @@ router.post(
         if (!order) {
             throw new NotFoundError();
         }
-
         if (order.userId !== req.currentUser!.id) {
             throw new NotAuthorizedError();
         }
@@ -42,14 +41,12 @@ router.post(
             amount: order.price * 100,
             source: token,
         });
-
         const payment = Payment.build({
             orderId,
             stripeId: charge.id,
         });
         await payment.save();
-
-        await new PaymentCreatedPublisher(natsWrapper.client).publish({
+        new PaymentCreatedPublisher(natsWrapper.client).publish({
             id: payment.id,
             orderId: payment.orderId,
             stripeId: payment.stripeId,
