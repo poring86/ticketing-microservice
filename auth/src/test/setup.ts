@@ -40,7 +40,7 @@ global.signin = async () => {
     return cookie;
 };
 
-// afterAll(async () => {
-//     await mongo.stop();
-//     await mongoose.connection.close();
-// });
+afterAll(async () => {
+    await mongo.stop();
+    await mongoose.connection.close();
+});
