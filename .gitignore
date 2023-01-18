@@ -1,11 +1,5 @@
-auth/node_modules
-client/node_modules
 client/.next
 common/build
-common/node_modules
 common/.git
-tickets/node_modules
-nats-test/node_modules
-orders/node_modules
-expiration/node_modules
-payments/node_modules
+
+node_modules
