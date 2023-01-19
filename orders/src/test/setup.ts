@@ -52,7 +52,7 @@ global.signin = () => {
     return [`session=${base64}`];
 };
 
-// afterAll(async () => {
-//     await mongo.stop();
-//     await mongoose.connection.close();
-// });
+afterAll(async () => {
+    await mongo.stop();
+    await mongoose.connection.close();
+});
