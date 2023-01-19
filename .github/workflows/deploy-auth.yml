@@ -12,4 +12,3 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: cd auth && docker build -t poring86/auth .
-      - run: docker push poring86/auth
