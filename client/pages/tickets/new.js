@@ -53,6 +53,7 @@ export default () => {
                         className="form-control"
                     />
                 </div>
+                <br />
                 <button className="btn btn-primary">Submit</button>
                 {errors}
             </form>
