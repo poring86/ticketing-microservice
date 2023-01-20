@@ -23,6 +23,7 @@ It is a full stack aplication for a for a ticket purchase ecommerce
 -   Github Actions
 -   Microservice Arquiteture
 -   CI/CD Pipeline
+-   Digital Ocean
 
 # How to run the project
 
