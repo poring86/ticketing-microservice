@@ -2,7 +2,7 @@
 
 # About the project
 
-It is a full stack aplication for a for a ticket purchase ecommerce
+It is a full stack ecommerce aplication for a for a tickets purchase
 
 # Some of technologies used on the project
 
