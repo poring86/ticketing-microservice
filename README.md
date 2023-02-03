@@ -18,6 +18,7 @@ It is a full stack ecommerce aplication for tickets purchase
 -   JWT
 -   Jest
 -   Docker
+-   NATS
 -   Kubernets
 -   Skaffold
 -   Github Actions
