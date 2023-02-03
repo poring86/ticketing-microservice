@@ -27,7 +27,7 @@ It is a full stack ecommerce aplication for tickets purchase
 
 # How to run the project
 
-Prerequisites: Docker, Kubernets and skaffold installed on your machine
+Prerequisites: Docker, Kubernetes and skaffold installed on your machine
 
 ```bash
 # Clone repository
