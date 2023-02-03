@@ -1,10 +1,10 @@
 # Ticketing microservice
 
-# About the project
+## About the project
 
 It is a full stack ecommerce aplication for tickets purchase
 
-# Some of technologies used on the project
+## Some of technologies used on the project
 
 -   Typescript
 -   React
@@ -25,7 +25,7 @@ It is a full stack ecommerce aplication for tickets purchase
 -   CI/CD Pipeline
 -   Digital Ocean
 
-# How to run the project
+## How to run the project
 
 Prerequisites: Docker, Kubernetes and skaffold installed on your machine
 
@@ -44,7 +44,7 @@ npm run test
 
 ```
 
-# Autor
+## Autor
 
 Matheus de Lino Ferreira
 
