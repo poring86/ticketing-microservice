@@ -16,6 +16,7 @@ It is a full stack ecommerce aplication for tickets purchase
 -   Redis
 -   Bull
 -   JWT
+-   Stripe
 -   Jest
 -   Docker
 -   NATS
