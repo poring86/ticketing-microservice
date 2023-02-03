@@ -23,7 +23,7 @@ It is a full stack ecommerce aplication for tickets purchase
 -   Kubernets
 -   Skaffold
 -   Github Actions
--   Asynchronous Message-Based Communication Arquiteture
+-   Microservices Asynchronous Message-Based Communication Arquiteture
 -   CI/CD Pipeline
 -   Digital Ocean
 
